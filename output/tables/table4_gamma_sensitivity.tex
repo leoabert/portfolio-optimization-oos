@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+  \centering
+  \caption[Sensitivity to risk aversion]{Sensitivity to risk aversion. Each row re-optimises the mean--variance portfolio for a different $\gamma$ and re-evaluates CEQ accordingly. Minimum--variance weights are $\gamma$-independent but CEQ changes. $M=120$, TC = 50\,bps.}
+  \label{tab:gamma_robust}
+  \addcontentsline{loa}{appendixentry}{\protect\numberline{\thetable}Sensitivity to risk aversion}
+  \small
+  \begin{tabular}{r *{8}{r}}
+    \toprule
+    & \multicolumn{3}{c}{CEQ (\%)} & \multicolumn{2}{c}{$\Delta$CEQ (\%)} & \multicolumn{3}{c}{Turnover (\%)} \\
+    \cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-9}
+    $\gamma$ & $1/N$ & MV & MinVar & MV & MinVar & $1/N$ & MV & MinVar \\
+    \midrule
+    \textbf{1} & 6.85 & 4.57 & 6.17 & 2.28 & 0.69 & 2.40 & 15.95 & 5.15 \\
+    3 & 4.57 & 2.20 & 4.60 & 2.37 & $-$0.03 & 2.40 & 15.65 & 5.15 \\
+    5 & 2.29 & 0.09 & 3.03 & 2.20 & $-$0.75 & 2.40 & 14.96 & 5.15 \\
+    \bottomrule
+  \end{tabular}
+
+  \smallskip
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    \textit{Notes.} All values are annualised. Higher $\gamma$ penalises variance more heavily, reducing CEQ for all strategies. MV weights are re-optimised for each $\gamma$ (it enters the objective $\max\; \mathbf{w}^{\prime}\boldsymbol{\mu} - \tfrac{\gamma}{2}\,\mathbf{w}^{\prime}\boldsymbol{\Sigma}\mathbf{w}$). Turnover is the monthly average. Baseline $\gamma=1$ in bold.
+    \textit{Source:} Author's calculations based on data from Kenneth R.\ French's Data Library.
+  \end{minipage}
+\end{table}

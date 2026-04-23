@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption[Subperiod performance comparison]{Subperiod performance comparison. Panel~A covers the pre-crisis period (1973-08 to 2008-12) and Panel~B covers the post-crisis low interest rate period (2009-01 to 2025-12). The split date is January 2009. Estimation window $M=120$ months, $\gamma=1$.}
+  \label{tab:subperiod}
+  \small
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{l *{6}{r}}
+    \toprule
+    & \multicolumn{1}{c}{Mean Exc.}    & \multicolumn{1}{c}{Volatility}    & \multicolumn{1}{c}{Sharpe}    & \multicolumn{1}{c}{CEQ}    & \multicolumn{1}{c}{$\Delta$CEQ}    & \multicolumn{1}{c}{Turnover} \\
+    Strategy    & \multicolumn{1}{c}{Ret.\ (\%)}    & \multicolumn{1}{c}{(\%)}    & \multicolumn{1}{c}{Ratio}    & \multicolumn{1}{c}{(\%)}    & \multicolumn{1}{c}{(\%)}    & \multicolumn{1}{c}{(\%)} \\
+    \midrule
+    \multicolumn{7}{l}{\textit{Panel A: Pre-Crisis (1973-08 to 2008-12)}} \\
+    \addlinespace[2pt]
+    $1/N$ & 5.53 & 15.02 & 0.368 & 4.40 & -- & 2.34 \\
+    Mean--Variance & 3.90 & 22.14 & 0.176 & 1.44 & 2.96 & 15.65 \\
+    Minimum--Variance & 5.43 & 12.77 & 0.426 & 4.62 & $-$0.22 & 5.10 \\
+    \addlinespace[6pt]
+    \multicolumn{7}{l}{\textit{Panel B: Post-Crisis (2009-01 to 2025-12)}} \\
+    \addlinespace[2pt]
+    $1/N$ & 13.13 & 15.23 & 0.862 & 11.97 & -- & 2.52 \\
+    Mean--Variance & 13.18 & 20.38 & 0.647 & 11.10 & 0.87 & 16.56 \\
+    Minimum--Variance & 10.12 & 11.96 & 0.846 & 9.40 & 2.57 & 5.26 \\
+    \addlinespace[6pt]
+    \multicolumn{7}{l}{\textit{Difference (Post $-$ Pre)}} \\
+    \addlinespace[2pt]
+    $1/N$ & 7.60 & 0.21 & 0.494 & 7.57 & -- & 0.19 \\
+    Mean--Variance & 9.28 & $-$1.76 & 0.471 & 9.66 & $-$2.09 & 0.91 \\
+    Minimum--Variance & 4.68 & $-$0.81 & 0.420 & 4.78 & 2.79 & 0.17 \\
+    \bottomrule
+  \end{tabular}%
+  }
+
+  \smallskip
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    \textit{Notes.} All values are annualised except turnover (monthly average). Metrics are computed on excess returns $r_{p,t} - r_{f,t}$. $\Delta\text{CEQ} = \text{CEQ}_{1/N} - \text{CEQ}_{\text{strategy}}$; positive values indicate $1/N$ outperformance. Panel~A covers the pre-crisis period and Panel~B covers the post-crisis low interest rate period. The split date is January 2009.
+    \textit{Source:} Author's calculations based on data from Kenneth R.\ French's Data Library.
+  \end{minipage}
+\end{table}

@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+  \centering
+  \caption[Sensitivity to estimation window length]{Sensitivity to estimation window length. Each row reports out-of-sample results for a different rolling estimation window $M$. Baseline is $M=120$. Transaction cost = 50\,bps, $\gamma=1$.}
+  \label{tab:window_robust}
+  \addcontentsline{loa}{appendixentry}{\protect\numberline{\thetable}Sensitivity to estimation window length}
+  \small
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{r l *{8}{r}}
+    \toprule
+    & & \multicolumn{3}{c}{CEQ (\%)} & \multicolumn{2}{c}{$\Delta$CEQ (\%)} & \multicolumn{3}{c}{Sharpe Ratio} \\
+    \cmidrule(lr){3-5} \cmidrule(lr){6-7} \cmidrule(lr){8-10}
+    $M$ & OOS Period & $1/N$ & MV & MinVar & MV & MinVar & $1/N$ & MV & MinVar \\
+    \midrule
+        60 & 1968-08 -- 2025-12 & 6.17 & 4.18 & 5.07 & 1.99 & 1.10 & 0.485 & 0.299 & 0.465 \\
+        90 & 1971-02 -- 2025-12 & 6.59 & 4.43 & 5.60 & 2.16 & 0.99 & 0.516 & 0.317 & 0.518 \\
+        \textbf{120} & 1973-08 -- 2025-12 & 6.85 & 4.57 & 6.17 & 2.28 & 0.69 & 0.529 & 0.320 & 0.555 \\
+        180 & 1978-08 -- 2025-12 & 7.70 & 5.49 & 7.16 & 2.21 & 0.54 & 0.596 & 0.395 & 0.646 \\
+    \bottomrule
+  \end{tabular}%
+  }
+
+  \smallskip
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    \textit{Notes.} CEQ and Sharpe are annualised and computed on excess returns. $\Delta\text{CEQ} = \text{CEQ}_{1/N} - \text{CEQ}_{\text{strategy}}$; positive values indicate $1/N$ outperformance. Different $M$ values imply different OOS start dates. Baseline $M=120$ is shown in bold.
+    \textit{Source:} Author's calculations based on data from Kenneth R.\ French's Data Library.
+  \end{minipage}
+\end{table}

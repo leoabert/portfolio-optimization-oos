@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+  \centering
+  \caption[Out-of-sample performance of portfolio strategies]{Out-of-sample performance of portfolio strategies. The sample covers August 1973 to December 2025 using Fama--French 10 Industry Portfolios with a rolling estimation window of $M=120$ months and risk aversion $\gamma=1$.}
+  \label{tab:full_sample}
+  \small
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{l *{6}{r}}
+    \toprule
+    & \multicolumn{1}{c}{Mean Exc.}
+    & \multicolumn{1}{c}{Volatility}
+    & \multicolumn{1}{c}{Sharpe}
+    & \multicolumn{1}{c}{CEQ}
+    & \multicolumn{1}{c}{$\Delta$CEQ}
+    & \multicolumn{1}{c}{Turnover} \\
+    Strategy
+    & \multicolumn{1}{c}{Ret.\ (\%)}
+    & \multicolumn{1}{c}{(\%)}
+    & \multicolumn{1}{c}{Ratio}
+    & \multicolumn{1}{c}{(\%)}
+    & \multicolumn{1}{c}{(\%)}
+    & \multicolumn{1}{c}{(\%)} \\
+    \midrule
+    $1/N$ & 8.00 & 15.11 & 0.529 & 6.85 & -- & 2.40 \\
+    Mean--Variance & 6.91 & 21.60 & 0.320 & 4.57 & 2.28 & 15.95 \\
+    Minimum--Variance & 6.95 & 12.52 & 0.555 & 6.17 & 0.69 & 5.15 \\
+    \bottomrule
+  \end{tabular}%
+  }
+
+  \smallskip
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    \textit{Notes.} All values are annualised except turnover (monthly average). Mean excess return, volatility, and CEQ are computed on excess returns $r_{p,t} - r_{f,t}$. Welfare cost is $\Delta\text{CEQ} = \text{CEQ}_{1/N} - \text{CEQ}_{\text{strategy}}$; positive values indicate $1/N$ outperformance. Baseline TC = 50 bps.
+    \textit{Source:} Author's calculations based on data from Kenneth R.\ French's Data Library.
+  \end{minipage}
+\end{table}

@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+  \centering
+  \caption[Sensitivity to transaction costs]{Sensitivity to transaction costs. Net returns are computed as $r_{p,t}^{net} = r_{p,t}^{gross} - c \cdot TO_{t}$ for each cost level $c$. $M=120$, $\gamma=1$.}
+  \label{tab:tc_robust}
+  \addcontentsline{loa}{appendixentry}{\protect\numberline{\thetable}Sensitivity to transaction costs}
+  \small
+  \begin{tabular}{r *{8}{r}}
+    \toprule
+    & \multicolumn{3}{c}{CEQ (\%)} & \multicolumn{2}{c}{$\Delta$CEQ (\%)} & \multicolumn{3}{c}{Sharpe Ratio} \\
+    \cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-9}
+    TC (bps) & $1/N$ & MV & MinVar & MV & MinVar & $1/N$ & MV & MinVar \\
+    \midrule
+    0 & 7.00 & 5.53 & 6.48 & 1.47 & 0.52 & 0.539 & 0.364 & 0.580 \\
+    25 & 6.93 & 5.05 & 6.32 & 1.88 & 0.60 & 0.534 & 0.342 & 0.568 \\
+    \textbf{50} & 6.85 & 4.57 & 6.17 & 2.28 & 0.69 & 0.529 & 0.320 & 0.555 \\
+    100 & 6.71 & 3.61 & 5.86 & 3.10 & 0.85 & 0.520 & 0.275 & 0.531 \\
+    \bottomrule
+  \end{tabular}
+
+  \smallskip
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    \textit{Notes.} All values are annualised. At TC = 0\,bps gross returns are used; higher TC levels increasingly penalise high-turnover strategies. Baseline TC = 50\,bps is shown in bold. $\Delta\text{CEQ} = \text{CEQ}_{1/N} - \text{CEQ}_{\text{strategy}}$.
+    \textit{Source:} Author's calculations based on data from Kenneth R.\ French's Data Library.
+  \end{minipage}
+\end{table}

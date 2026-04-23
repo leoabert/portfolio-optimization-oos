@@ -1,0 +1,6 @@
+The \citet{memmelPerformanceHypothesisTesting2003}-corrected
+Jobson--Korkie test for equal Sharpe ratios yields
+$z = 2.07$ ($p = 0.038$) for the
+\oneN{} versus mean-variance comparison and
+$z = -0.34$ ($p = 0.736$) for
+\oneN{} versus minimum-variance.

@@ -1,0 +1,152 @@
+======================================================================
+MASTER EXECUTION: Running All Thesis Scripts
+Started: 2026-03-27 23:12:09
+======================================================================
+
+[1/11] Building dataset (01_build_dataset.py)...
+  OK (2.2s)
+       Date range: 1963-07 to 2025-12
+       Mean RF (annual): 4.36%
+    
+    [3/4] Downloading CPI from FRED...
+       ✗ Error: Bad Request.  The value for variable api_key is not a 32 character alpha-numeric lower-case string.  Read https://fred.stlouisfed.org/docs/api/api_key.html for more information.
+
+[2/11] Running backtests (02_backtest.py)...
+  OK (17.7s)
+        Total OOS months: 629
+    
+    ======================================================================
+    SANITY CHECK: ALL PASSED
+    ======================================================================
+
+[3/11] Regime comparison & Table 2 (03_regime_comparison.py)...
+  OK (1.0s)
+    \end{table}
+    
+    ======================================================================
+    REGIME COMPARISON COMPLETE
+    ======================================================================
+
+[4/11] Regressions (DCEQ ~ real rate) (04_robustness_regressions.py)...
+  OK (67.3s)
+    Figures saved to ./output/
+    
+    ======================================================================
+    ROBUSTNESS ANALYSES COMPLETE
+    ======================================================================
+
+[5/11] Bootstrap, HHI scatter (05_robustness_bootstrap.py)...
+  OK (93.6s)
+    Correlation: ρ = -0.325, p = 0.0000
+    
+    ======================================================================
+    ALL ADDITIONAL ANALYSES COMPLETE
+    ======================================================================
+
+[6/11] Subperiod bootstrap CI (05b_subperiod_bootstrap.py)...
+  OK (5.1s)
+    Post-Crisis DCEQ(MinVar)       2.573111 -0.877313  6.136160        False
+    
+    ============================================================
+    SUBPERIOD BOOTSTRAP COMPLETE
+    ============================================================
+
+[7/11] Sharpe ratio equality tests (05c_sharpe_tests.py)...
+  OK (1.2s)
+    1/N vs MinVar 0.529 0.555   -0.026 -0.337 0.736
+    
+    ============================================================
+    SHARPE RATIO TESTS COMPLETE
+    ============================================================
+
+[8/11] Descriptive statistics (06_descriptive_stats.py)...
+  OK (1.1s)
+    ✓ LaTeX table saved: ./output/table1_descriptive_stats.tex
+    
+    ======================================================================
+    DESCRIPTIVE STATISTICS COMPLETE
+    ======================================================================
+
+[9/11] Table 1 (full sample) (07_export_table1.py)...
+  OK (1.0s)
+    Minimum Variance                   6.952          12.517         0.555           6.168     0.686         5.150
+    
+    ======================================================================
+    LaTeX TABLE EXPORT COMPLETE
+    ======================================================================
+
+[10/11] Tables 3-5 (robustness) (08_robustness_tables.py)...
+  OK (139.3s)
+    
+    
+    ======================================================================
+    ALL ROBUSTNESS TABLES COMPLETE (3, 4, 5)
+    ======================================================================
+
+[11/11] Figures 1-5 (publication) (09_thesis_figures.py)...
+  OK (3.7s)
+        377317 bytes  fig2_mv_weights.png
+        374484 bytes  fig3_minvar_weights.png
+        423325 bytes  fig4_hhi_timeseries.png
+        289818 bytes  fig5_interest_rates.png
+    ======================================================================
+
+======================================================================
+SUMMARY
+======================================================================
+Passed: 11/11
+  OK  01_build_dataset.py (2.2s)
+  OK  02_backtest.py (17.7s)
+  OK  03_regime_comparison.py (1.0s)
+  OK  04_robustness_regressions.py (67.3s)
+  OK  05_robustness_bootstrap.py (93.6s)
+  OK  05b_subperiod_bootstrap.py (5.1s)
+  OK  05c_sharpe_tests.py (1.2s)
+  OK  06_descriptive_stats.py (1.1s)
+  OK  07_export_table1.py (1.0s)
+  OK  08_robustness_tables.py (139.3s)
+  OK  09_thesis_figures.py (3.7s)
+
+ALL ANALYSES COMPLETE - READY FOR THESIS
+
+Output files (36):
+       213 bytes  bootstrap_ci.csv
+       232 bytes  bootstrap_ci.tex
+    102953 bytes  fig_bootstrap_ci.png
+    466986 bytes  fig_hhi_vs_welfare.png
+    615449 bytes  fig_regression_scatter.png
+    107425 bytes  fig_subperiod_barplot.png
+    456585 bytes  fig_timeseries_dual.png
+    356156 bytes  figures\fig1_cumulative_wealth.png
+    377317 bytes  figures\fig2_mv_weights.png
+    374484 bytes  figures\fig3_minvar_weights.png
+    423325 bytes  figures\fig4_hhi_timeseries.png
+    289818 bytes  figures\fig5_interest_rates.png
+       395 bytes  performance_table.csv
+       484 bytes  performance_table.tex
+      1895 bytes  regression_simple.txt
+      1993 bytes  regression_with_vix.txt
+       258 bytes  sharpe_test_footnote.txt
+       121 bytes  sharpe_test_results.csv
+     40696 bytes  strategy_hhi.csv
+     46421 bytes  strategy_returns.csv
+     46600 bytes  strategy_turnover.csv
+    109286 bytes  strategy_weights_minvar.csv
+     92278 bytes  strategy_weights_mv.csv
+       409 bytes  subperiod_bootstrap_ci.csv
+      1476 bytes  table1_descriptive_stats.tex
+       449 bytes  tables\table1_full_sample.csv
+      1648 bytes  tables\table1_full_sample.tex
+      1274 bytes  tables\table2_subperiod.csv
+      2439 bytes  tables\table2_subperiod.tex
+      1038 bytes  tables\table3_window_robustness.csv
+      1695 bytes  tables\table3_window_robustness.tex
+       733 bytes  tables\table4_gamma_sensitivity.csv
+      1582 bytes  tables\table4_gamma_sensitivity.tex
+       696 bytes  tables\table5_tc_sensitivity.csv
+      1469 bytes  tables\table5_tc_sensitivity.tex
+      1682 bytes  tables\table_subperiod_bootstrap.tex
+
+Finished: 2026-03-27 23:17:43
+Total runtime: 333s (5.6 min)
+======================================================================
