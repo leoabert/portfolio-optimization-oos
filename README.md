@@ -1,4 +1,4 @@
-# Portfolio Optimization in Low Interest Rate Environments
+# Portfolio Optimization in Low Interest Environments
 
 **Bachelor Thesis — Leo Abert**  
 University of Konstanz — Department of Economics  
